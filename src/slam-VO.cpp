@@ -20,9 +20,9 @@ int main( int argc, char** argv )
   //图片读取
   char filename1[200];
   char filename2[200];
-  sprintf(filename1, "/home/pty/slambook/homework/yxc/image/%06d.png", 0);
-  sprintf(filename2, "/home/pty/slambook/homework/yxc/image/%06d.png", 1);
-  string pose_path =  "/home/pty/slambook/homework/yxc/00.txt";
+  sprintf(filename1, "/home/neko/slam-VO/00/image_0/%06d.png", 0);
+  sprintf(filename2, "/home/neko/slam-VO/00/image_0/%06d.png", 1);
+  string pose_path =  "/home/neko/slam-VO/poses/00.txt";
   img_1 = imread(filename1);
   img_2 = imread(filename2);
 
@@ -96,7 +96,7 @@ int main( int argc, char** argv )
         points.clear();
         points1.clear();
         points2.clear();
-  	sprintf(filename, "/home/pty/slambook/homework/yxc/image/%06d.png", numFrame);
+  	sprintf(filename, "/home/neko/slam-VO/00/image_0/%06d.png", numFrame);
         cout << "Current frame number:"<<numFrame << endl;
   	currImage = imread(filename);
   	
