@@ -134,7 +134,7 @@ double getAbsoluteScale(int frame_id, int sequence_id, double z_cal)
   
   string line;
   int i = 0;
-  ifstream myfile ("/home/pty/slambook/homework/yxc/00.txt");
+  ifstream myfile ("/home/neko/slam-VO/poses/00.txt");
   double x =0, y=0, z = 0;
   double x_prev, y_prev, z_prev;
   if (myfile.is_open())
